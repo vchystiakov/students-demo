@@ -3,7 +3,7 @@ import express, { Request, Response } from 'express';
 //creating app
 const app = express();
 //setting port where will be our server(application)
-const port = 3001;
+const port = process.env.PORT || 5000;
 
 app.get('/', (req: Request, res: Response) => {
   let message = 'Hello INCUBATOR.com!';
